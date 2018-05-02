@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_frameLayout_main"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/main_rb_group">
+
+
+        <RadioButton
+            style="@style/Main_RadioButton"
+            android:drawableTop="@drawable/btn_index"
+            android:text="首页"
+            android:id="@+id/main_rb_navigation_home"/>
+
+        <RadioButton
+            style="@style/Main_RadioButton"
+            android:drawableTop="@drawable/btn_know"
+            android:text="知识库"
+            android:id="@+id/main_rb_navigation_know"/>
+        <RadioButton
+            style="@style/Main_RadioButton"
+            android:drawableTop="@drawable/btn_ask"
+            android:text="快速提问"
+            android:id="@+id/main_rb_navigation_question"/>
+        <RadioButton
+            style="@style/Main_RadioButton"
+            android:drawableTop="@drawable/btn_exchange"
+            android:text="交流"
+            android:id="@+id/main_rb_navigation_exchange"/>
+        <RadioButton
+            style="@style/Main_RadioButton"
+            android:drawableTop="@drawable/btn_me"
+            android:text="我的"
+            android:id="@+id/main_rb_navigation_me"/>
+
+    </RadioGroup>
+
+
+
+
+
+</LinearLayout>
